@@ -30,7 +30,7 @@ A single entry of the ActivityNet-EKG knowledge graph is represented below. A vi
 ### Cite
 If you find HyAI helpful in your work please cite the paper:
 ```
-Shahi Dost, Maria-Esther Vidal, Hanan Begali, Enrique Iglesias, Ahmad Sakor. 2023.
+Shahi Dost, Maria-Esther Vidal, Enrique Iglesias, Ahmad Sakor. 2023.
 Knowledge Capturing from Multimodal Video-Textual Knowledge-Entity Linking (KCAP’2023)[https://www.k-cap.org/2023/]
 ```
 
