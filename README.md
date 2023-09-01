@@ -21,9 +21,9 @@ Statistics of the developed ActivityNet-EKG* (AN-EKG*), and ActivityNet-EKG (AN-
 
 ![EKG_tab1](https://github.com/SDM-TIB/Video-Entity-Linking/assets/25593410/5bf2cdcb-2999-427a-b827-29072d282fec)
 
-### Statistics of ActivityNet-EKG
 
 ###  Single entry of the ActivityNet-EKG Knowledge-Graph
+A single entry of the ActivityNet-EKG knowledge graph is represented below. A video segment consists of three video frames and a textual caption describing the visual part. Figure b shows the SPARQL query for extracting RDF triples for a document with ID:v_QOlSCBRmfWY. A small RDF-based knowledge graph for a single entry is shown in green (the resource information), and blue and yellow triples (textual and visual portions).
 
 ### Cite
 If you find HyAI helpful in your work please cite the paper:
