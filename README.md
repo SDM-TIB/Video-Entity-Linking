@@ -38,4 +38,4 @@ Knowledge Capturing from Multimodal Video-Textual Knowledge-Entity Linking (KCAP
 The codes and source files are licensed under [MIT License](https://github.com/SDM-TIB/Video-Entity-Linking/blob/main/LICENSE).
 
 ### Contact
-If you have any query regarding ActivityNet-EKG, ViTEL, source, or want to contribute to this work, please contact on shahi.dost[at]tib.eu.
+If you have any query regarding ActivityNet-EKG, ViTEL, source files, or want to contribute to this work, please contact on shahi.dost[at]tib.eu.
