@@ -6,6 +6,8 @@ This repository consists of scripts, dataset files, unified schema, and rml file
 The below Figure shows how the vision and language parts come to form three segments with captions describing the video contents. The knowledge base (KB) part represents the recognized and linked entities in the same colors with corresponding classes (types) in the KB and represents their actual DBpedia linked in the table.
 
 
+![EKG_fig1](https://github.com/SDM-TIB/Video-Entity-Linking/assets/25593410/7c6292fb-9547-45a3-9be3-bf920d97a416)
+
 ### VIDEO-TEXTUAL-KNOWLEDGE-ENTITY
 LINKING-(VITEL)
 
