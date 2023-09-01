@@ -1,0 +1,173 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix transit: <http://vocab.org/transit/terms/>.
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix video: <http://tib.eu/vocab/> .
+@base <http://tib.eu/> .
+
+
+<Document>
+  a rr:TriplesMap;
+
+  rml:logicalSource [
+
+    rml:source "D:/TIB/VGD_KR/Evaluation/300/mapping/files/activitynet_major_data_and_linked_data_for_300_doc.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+
+  rr:subjectMap [
+    rr:template "http://tib.eu/vocab/Document/{doc_id}";
+    rr:class video:Document
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate video:ConsistOf;
+    rr:objectMap [
+    	rr:parentTriplesMap <VideoSegementTripleMap>;
+    ];
+  ].
+
+<VideoSegementTripleMap>
+  a rr:TriplesMap;
+
+  rml:logicalSource [
+    rml:source "D:/TIB/VGD_KR/Evaluation/300/mapping/files/activitynet_major_data_and_linked_data_for_300_doc.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+
+  rr:subjectMap [
+    rr:template "http://tib.eu/voacb/Video_Segement/{Segment_ID}";
+    rr:class video:Video_Segement
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate video:has_Video_Frame; #dct:isPartOf
+    rr:objectMap [
+      rr:parentTriplesMap <VideoFrameTripleMap>;
+    ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate video:has_Textual_Part; #dct:isPartOf
+    rr:objectMap [
+      rr:parentTriplesMap <TextualPartTripleMap>;
+    ];
+  ].
+
+
+  <VideoFrameTripleMap>
+    a rr:TriplesMap;
+
+    rml:logicalSource [
+      rml:source "D:/TIB/VGD_KR/Evaluation/300/mapping/files/activitynet_major_data_and_linked_data_for_300_doc.csv";
+      rml:referenceFormulation ql:CSV
+    ];
+
+    rr:subjectMap [
+      rr:template "http://tib.eu/voacb/Video_Frame/{Tokens_id}-{frame_Ind}";
+      rr:class video:Video_Frame
+    ];
+
+    rr:predicateObjectMap [
+      rr:predicate video:hasFrameInd;
+      rr:objectMap [
+        rml:reference "frame_Ind";
+        rr:datatype xsd:int
+      ];
+    ];
+
+    rr:predicateObjectMap [
+      rr:predicate video:hasCrowds;
+      rr:objectMap [
+        rml:reference "Crowds";
+        rr:datatype xsd:int
+      ];
+    ];
+
+    rr:predicateObjectMap [
+      rr:predicate video:VisualEntityMention;
+      rr:objectMap [
+        rr:parentTriplesMap <BoundingBoxTripleMap>;
+      ];
+    ].
+
+  <BoundingBoxTripleMap>
+    a rr:TriplesMap;
+
+    rml:logicalSource [
+      rml:source "D:/TIB/VGD_KR/Evaluation/300/mapping/files/activitynet_major_data_and_linked_data_for_300_doc.csv";
+      rml:referenceFormulation ql:CSV
+    ];
+
+    rr:subjectMap [
+      rr:template "http://tib.eu/voacb/Bounding_Box/{ybr}_{ytl}_{xbr}_{xtl}";
+      rr:class video:Bounding_Box
+    ];
+
+    rr:predicateObjectMap [
+      rr:predicate video:ybr;
+      rr:objectMap [
+        rml:reference "ybr";
+        rr:datatype xsd:int
+      ];
+    ];
+    rr:predicateObjectMap [
+      rr:predicate video:ytl;
+      rr:objectMap [
+        rml:reference "ytl";
+        rr:datatype xsd:int
+      ];
+    ];
+    rr:predicateObjectMap [
+      rr:predicate video:xbr;
+      rr:objectMap [
+        rml:reference "xbr";
+        rr:datatype xsd:int
+      ];
+    ];
+    rr:predicateObjectMap [
+      rr:predicate video:xtl;
+      rr:objectMap [
+        rml:reference "xtl";
+        rr:datatype xsd:int
+      ];
+    ].
+
+  <TextualPartTripleMap>
+    a rr:TriplesMap;
+
+      rml:logicalSource [
+        rml:source "D:/TIB/VGD_KR/Evaluation/300/mapping/files/activitynet_major_data_and_linked_data_for_300_doc.csv";
+        rml:referenceFormulation ql:CSV
+      ];
+
+      rr:subjectMap [
+        rr:template "http://tib.eu/voacb/Textual_Part/{Tokens_id}-{process_Class}";
+        rr:class video:Textual_Part
+      ];
+
+      rr:predicateObjectMap [
+        rr:predicate video:TextualEntityMention;
+        rr:objectMap [
+          rml:reference "process_Class";
+          rr:datatype xsd:string
+        ];
+      ];
+
+      rr:predicateObjectMap [
+        rr:predicate video:hasAnnotationDBpedi; #owl:sameAs
+        rr:objectMap [
+          rml:reference "DBpedia";
+        ];
+      ];
+      rr:predicateObjectMap [
+        rr:predicate video:hasAnnotationWikiData;
+        rr:objectMap [
+          rml:reference "Wikidata";
+        ];
+      ].
