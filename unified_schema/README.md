@@ -1,3 +1,3 @@
-# Video-Entity-Linking
+# unified schema
 
-Documentation with some basic examples on how to use ActvityNet-EKR dataset step-by-step are coming soon!
+The unified schema files of ActvityNet-EKR and ActvityNet-EKR* can be found in [here](https://github.com/SDM-TIB/Video-Entity-Linking/tree/main/rml_mapping).
