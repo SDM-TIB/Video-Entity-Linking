@@ -13,6 +13,9 @@ We proposed a novel task called ViTEL (Video-Textual-Knowledge-Entity-Linking), 
 ###  Framework for ActivityNet-EKG development
 The below Figure shows the general architecture of the framework which is also used for the development of ActivityNet-EKG knowledge graph. The input to the framework can be visual data (e.g. images or videos), textual data, and annotated data, (ii) the textual part can be process by entity recognition and linking tasks/tool, (iii) the annotation of visual data has been used for the visual part or a visual object detector can be used in this part. The descrtipitve mapping rules (e.g. RML) will mapps the hetergenious data into RDF triples to generate knowledge graph. The resultant knowledge graph can be used in graph data base (e.g. GraphDB).
 
+
+![EKG_fig2](https://github.com/SDM-TIB/Video-Entity-Linking/assets/25593410/7a618da5-7004-440d-82bf-3c1697b90a72)
+
 ### Statistics of ActivityNet-EKG
 
 ###  Single entry of the ActivityNet-EKG Knowledge-Graph
