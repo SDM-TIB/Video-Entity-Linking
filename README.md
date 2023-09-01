@@ -5,6 +5,7 @@ This repository consists of scripts, dataset files, unified schema, and rml file
 
 The below Figure shows how the vision and language parts come to form three segments with captions describing the video contents. The knowledge base (KB) part represents the recognized and linked entities in the same colors with corresponding classes (types) in the KB and represents their actual DBpedia linked in the table.
 
+![EKG_fig1](https://github.com/SDM-TIB/Video-Entity-Linking/assets/25593410/d560dc1f-15ba-4d6f-8fb0-57517491d681)
 
 ### VIDEO-TEXTUAL-KNOWLEDGE-ENTITY-LINKING-(VITEL)
 We proposed a novel task called ViTEL (Video-Textual-Knowledge-Entity-Linking), in which the document is composed of textual data, visual data (in the form of video frames), and a knowledge base. The ViTEL task is trying to recognize and link maximum portions of visual and textual parts with the corresponding entity mentions (or classes) in the knowledge base, or linking them to new entities, extending the A-box of knowledge base with its type assertion(s). The ViTEL closed the loops between vision (i.e., videos), language (texts), and semantics (background knowledge) modalities.
