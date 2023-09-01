@@ -16,6 +16,11 @@ The below Figure shows the general architecture of the framework which is also u
 ### Statistics of ActivityNet-EKG and ActivityNet-EKG*
 Statistics of the developed ActivityNet-EKG* (AN-EKG*), and ActivityNet-EKG (AN-EKG) are shown in the below table.
 
+
+![EKG_fig2](https://github.com/SDM-TIB/Video-Entity-Linking/assets/25593410/7a618da5-7004-440d-82bf-3c1697b90a72)
+
+### Statistics of ActivityNet-EKG
+
 ###  Single entry of the ActivityNet-EKG Knowledge-Graph
 
 ### Cite
