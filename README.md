@@ -11,7 +11,7 @@ The below Figure shows how the vision and language parts come to form three segm
 We proposed a novel task called ViTEL (Video-Textual-Knowledge-Entity-Linking), in which the document is composed of textual data, visual data (in the form of video frames), and a knowledge base. The ViTEL task is trying to recognize and link maximum portions of visual and textual parts with the corresponding entity mentions (or classes) in the knowledge base, or linking them to new entities, extending the A-box of knowledge base with its type assertion(s). The ViTEL closed the loops between vision (i.e., videos), language (texts), and semantics (background knowledge) modalities.
 
 ###  Framework for ActivityNet-EKG development
-The below Figure shows the general architecture of the framework which is also used for the development of ActivityNet-EKG knowledge graph. The input to the framework can be visual data (e.g. images or videos), textual data, and annotated data, (ii) the textual part can be process by entity recognition and linking tasks/tool, (iii) the annotation of visual data has been used for the visual part or a visual object detector can be used in this part. The descrtipitve mapping rules (e.g. RML) will mapps the hetergenious data into RDF triples to generate knowledge graph. The resultant knowledge graph can be used in graph data base (e.g. GraphDB).
+The below Figure shows the general architecture of the framework which is also used for the development of ActivityNet-EKG knowledge graph. The input to the framework can be visual data (e.g. images or videos), textual data, and annotated data, (ii) the textual part can be processed by entity recognition and linking tasks/tool, (iii) the annotation of visual data has been used for the visual part or a visual object detector can be used in this part. The descriptive mapping rules (e.g. RML) will map the heterogeneous data into RDF triples to generate a knowledge graph. The resultant knowledge graph can be used in the graph database (e.g. GraphDB).
 
 
 ![EKG_fig2](https://github.com/SDM-TIB/Video-Entity-Linking/assets/25593410/7a618da5-7004-440d-82bf-3c1697b90a72)
@@ -19,6 +19,7 @@ The below Figure shows the general architecture of the framework which is also u
 ### Statistics of ActivityNet-EKG and ActivityNet-EKG*
 Statistics of the developed ActivityNet-EKG* (AN-EKG*), and ActivityNet-EKG (AN-EKG) are shown in the below table.
 
+![EKG_tab1](https://github.com/SDM-TIB/Video-Entity-Linking/assets/25593410/5bf2cdcb-2999-427a-b827-29072d282fec)
 
 ### Statistics of ActivityNet-EKG
 
