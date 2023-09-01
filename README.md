@@ -9,7 +9,6 @@ The below Figure shows how the vision and language parts come to form three segm
 ### VIDEO-TEXTUAL-KNOWLEDGE-ENTITY-LINKING-(VITEL)
 We proposed a novel task called ViTEL (Video-Textual-Knowledge-Entity-Linking), in which the document is composed of textual data, visual data (in the form of video frames), and a knowledge base. The ViTEL task is trying to recognize and link maximum portions of visual and textual parts with the corresponding entity mentions (or classes) in the knowledge base, or linking them to new entities, extending the A-box of knowledge base with its type assertion(s). The ViTEL closed the loops between vision (i.e., videos), language (texts), and semantics (background knowledge) modalities.
 
-
 ###  Framework for ActivityNet-EKG development
 
 ### Statistics of ActivityNet-EKG
